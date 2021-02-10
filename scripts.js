@@ -11,6 +11,7 @@ function speedBarToggle(e) {
     const playbackRate = percent * (max - min) + min;
     bar.style.height = height;
     bar.textContent = playbackRate.toFixed(2) + 'x';
+    video.playbackRate = playbackRate;
 
 }
 
